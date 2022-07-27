@@ -8,6 +8,19 @@
 </head>
 <body>
 	<div class="wrapper">
+			<div>
+				<div class = "close-nav"></div>
+
+				<style>
+					body {
+						background: rgba(0,0,0,.2);
+					}
+				</style>
+
+				<div class = "mobile-nav">
+
+				</div>
+			</div>
 		<header class = "header">
 			<div class="main-logo">
 				<img src="logo-maot.svg" alt="">
@@ -204,7 +217,7 @@
 
 		<footer class = "footer">
 			<div class = "footer-col footer-col-1">
-				<h3 class = "footer-title">Контакты с нами</h3>
+				<h3 class = "footer-col-title">Контакты с нами</h3>
 				<div class = "footer-phones">
 					<div class = "footer-phones__item">
 						<a href="+74956486711" class = "footer-phone">+7 495 648 67 11</a>
@@ -217,24 +230,37 @@
 				</div>
 				<div class = "working-time">
 					<h3 class = "footer-title-small">Мы работаем</h3>
-					<p>по будням с 9:00 до 21:00</p>
-					<p>по выходным с 11:00 до 18:00</p>
+					<p class = "footer-title-p">по будням с 9:00 до 21:00</p>
+					<p class = "footer-title-p">по выходным с 11:00 до 18:00</p>
 				</div>
 				<div class = "footer-address">
 					<h3 class = "footer-title-small">Адрес</h3>
-					<p>г. Москва, ул. Бауманская д.6с2. Бизнес-центр Виктория Плаза, 8 этаж, 804 офис</p>
+					<p class="footer-title-p">г. Москва, ул. Бауманская д.6с2. Бизнес-центр Виктория Плаза, 8 этаж, 804 офис</p>
 				</div>
 			</div>
 			<div class = "footer-col footer-col-2">
-				<h3 class = "footer-title">Наши офисы</h3>
+				<h3 class = "footer-col-title">Наши офисы</h3>
+				<div class = "footer-places">
+					<a href="" class = "footer-place-item">Москва</a>
+					<a href="" class = "footer-place-item">Санкт-Петербург</a>
+					<a href="" class = "footer-place-item">Ростов-на-Дону</a>
+					<a href="" class = "footer-place-item">Краснодар</a>
+					<a href="" class = "footer-place-item">Тула</a>
+				</div>
 			</div>
 			<div class = "footer-col footer-col-3">
-				<h3 class = "footer-title">Соц. сети</h3>
+				<h3 class = "footer-col-title">Соц. сети</h3>
+				<div class = "footer-social-items">
+					<a href="" class = "footer-social-item" style = "background-image: url(telegram.svg);">Лучшие отели России</a>
+					<a href="" class = "footer-social-item" style = "background-image: url(telegram.svg);">Лучшие отели Подмосковья</a>
+					<a href="" class = "footer-social-item" style = "background-image: url(vk.svg);">Все о качественном и доступном отдыхе в Подмосковье</a>
+				</div>
 			</div>
 			<div class = "footer-col footer-col-4">
-				<h3 class = "footer-title">Оплата</h3>
+				<h3 class = "footer-col-title">Оплата</h3>
 			</div>
 		</footer>
+		<div class = "footer-copyright">&#169; 2004-<?=date('Y', $timestamp);?> МАОТ</div>
 	</div>
 </body>
 </html>

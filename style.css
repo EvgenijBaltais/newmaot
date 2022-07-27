@@ -120,6 +120,40 @@ body {
 	font-size: 12px;
 }
 
+/*@media only screen and (max-width: 1280px) {*/
+
+	.close-nav {
+		position: relative;
+		display: block;
+		width: 35px;
+		height: 35px;
+		margin-right: 0;
+		margin-left: auto;
+		cursor: pointer;
+		background-image: url('close_nav.svg');
+		background-size: cover;
+		background-repeat: repeat;
+	}
+
+	.close-nav:after {
+		display: block;
+		content: 'МЕНЮ';
+		position: absolute;
+		bottom: -20px;
+		left: 0;
+		right: 0;
+		text-align: center;
+		color: #000;
+
+	}
+
+	.mobile-nav {
+		width: 330px;
+		border-radius: 10px;
+		background: #fff;
+	}
+/*}*/
+
 /* Header, конец */
 
 
@@ -796,7 +830,15 @@ body {
 	color: rgb(51,51,51);
 	font-size: 16px;
 	line-height: 24px;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
+}
+
+.footer-col-title {
+	font-family: 'FontInterSemiBold';
+	color: rgb(51,51,51);
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 15px;
 }
 
 .footer-title-small {
@@ -804,7 +846,6 @@ body {
 	color: rgb(51,51,51);
 	font-size: 15px;
 	line-height: 24px;
-	margin-bottom: 20px;
 }
 
 .footer-col-1 {
@@ -830,17 +871,24 @@ body {
 }
 
 .footer-phones__item {
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 	font-size: 16px;
 	line-height: 16px;
 }
 
+.footer-phones__item:last-child {
+	margin-bottom: 0
+}
+
+.footer-phones {
+	margin-bottom: 20px;
+}
+
 .footer-phone {
-		font-family: 'FontInterSemiBold';
-		font-size: 16px;
-		line-height: 16px;
-		color: rgb(51,51,51)!important;
-		text-decoration: none;
+	font-size: 16px;
+	line-height: 16px;
+	color: rgb(51,51,51)!important;
+	text-decoration: none;
 }
 
 .footer-phone-info {
@@ -850,4 +898,53 @@ body {
 	font-family: 'FontInterLight';
 }
 
+.footer-title-p {
+	font-size: 15px;
+	line-height: 20px;
+	font-family: 'FontInterLight';
+}
+
+.working-time {
+	margin-bottom: 20px
+}
+
+.footer-places {
+
+}
+
+.footer-place-item {
+	display: block;
+	color:rgb(0, 0, 0);
+	font-size: 15px;
+	line-height: 15px;
+	text-decoration: underline;
+	margin-bottom: 15px;
+}
+
+.footer-social-item {
+	display: flex;
+	align-items: flex-start;
+	height: 25px;
+	margin-bottom: 10px;
+	padding-left: 35px;
+	box-sizing: border-box;
+	font-size: 15px;
+	line-height: 20px;
+	text-decoration: underline;
+	background-repeat: no-repeat;
+	background-position: center left;
+	background-size: 25px;
+	color: rgb(51,51,51);
+
+}
+
 /* Footer, конец */
+
+
+/* Footer copyright */
+
+.footer-copyright {
+	text-align: center;
+}
+
+/* Footer copyright, конец */
