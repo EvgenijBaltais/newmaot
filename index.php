@@ -8,19 +8,7 @@
 </head>
 <body>
 	<div class="wrapper">
-			<div>
-				<div class = "close-nav"></div>
-
-				<style>
-					body {
-						background: rgba(0,0,0,.2);
-					}
-				</style>
-
-				<div class = "mobile-nav">
-
-				</div>
-			</div>
+		<? //require_once('mobile-nav.php');?>
 		<header class = "header">
 			<div class="main-logo">
 				<img src="logo-maot.svg" alt="">
