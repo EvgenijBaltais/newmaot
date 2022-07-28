@@ -112,7 +112,7 @@
 		</section>
 		<section class = "popular-sections">
 			<div class = "popular-hotels">
-				<h2 class = "section-title">Горящие предложения</h2>
+				<h2 class = "section-title">Популярные отели России</h2>
 				<div class = "popular-items">
 					<? for ($i = 0; $i < 7; $i++): ?>
 					<div class = "popular-item">
@@ -123,7 +123,7 @@
 				</div>
 			</div>
 			<div class = "popular-ways">
-				<h2 class = "section-title">Горящие предложения</h2>
+				<h2 class = "section-title">Популярные направления</h2>
 
 				<div class = "popular-items">
 					<? for ($i = 0; $i < 7; $i++): ?>
