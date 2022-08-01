@@ -73,6 +73,19 @@ body {
 	border-radius: 8px;
 }
 
+.block-subtitle {
+	padding-left: 40px;
+	box-sizing: border-box;
+	font-size: 20px;
+	line-height: 30px;
+	font-family: 'FontInterBold';
+	color: #333
+}
+
+.subtitle-bold {
+
+}
+
 /* Общие стили, конец */
 
 /* Header */
@@ -308,9 +321,25 @@ body {
     animation: gradient 3s infinite linear;
     background-size: 400%;
     -webkit-background-clip: text;
+	text-align: center;
 }
 
 /* Заголовок главной, конец */
+
+
+/* Общий заголовок, не главной страницы */
+
+.secondary-h1 {
+	width: 100%;
+	padding: 100px 0;
+	display: inline-block;
+	font-family: FontInterExtraBold;
+	font-size: 70px;
+	color:#333;
+	text-align: center;
+}
+
+/* Общий заголовок, не главной страницы, конец */
 
 
 /* Форма подбора */
@@ -1074,3 +1103,101 @@ body {
 }
 
 /* Footer copyright, конец */
+
+
+/* Карта - карусель контактов */
+
+.map-slider-items {
+	display: flex;
+	list-style-type: none;
+	font-size: 0;
+	line-height: 0;
+	letter-spacing: 0;
+}
+
+.map-slider-item {
+	display: inline-flex;
+	align-items: center;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: normal;	
+}
+
+.map-slider-link {
+	color: #848484;
+	font-size: 20px;
+	line-height: 20px;
+	text-decoration: none;
+}
+
+.map-slider-link.active {
+	color:#FE4B2B;
+	font-size: 28px;
+	line-height: 28px;
+}
+
+.map-slider-nav {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 20px 0;
+}
+
+.our-offices-info {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 14px;
+	color:#8D928E;
+	src: url('inter/Inter-Light.ttf');
+}
+
+.our-offices-left {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin:auto;
+	width: 125px;
+	height: 20px;
+	background-image: url('long-arrow-left.svg');
+	background-repeat: no-repeat;
+	background-size: 30%;
+	background-position: center left;
+	cursor: pointer;
+}
+
+.our-offices-right {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin:auto;
+	width: 125px;
+	height: 20px;
+	background-image: url('long-arrow-right.svg');
+	background-repeat: no-repeat;
+	background-size: 30%;
+	background-position: center right;
+	cursor: pointer;
+}
+
+/* Карта - карусель контактов, конец */
+
+
+/* Блок карты */
+
+.map-section {
+	display: flex;
+	padding: 50px 0;
+}
+
+.map-info {
+	width: 400px;
+}
+
+.map-block {
+	width: calc(100% - 400px);
+}
+
+/* Блок карты, конец */
