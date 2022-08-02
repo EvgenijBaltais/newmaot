@@ -1,3 +1,12 @@
+/* Удалить */
+
+.y-map {
+	display: block;
+	width: 100%;
+}
+
+/* Удалить, конец */
+
 /* Общие стили */
 
 @font-face {
@@ -44,6 +53,7 @@
 
 body {
 	--red-linear-gradient: linear-gradient(45deg, rgba(255,74,43,1) 0%, rgba(255,68,87,1) 45%, rgba(255,68,87,1) 60%, rgba(255,74,43,1) 100%);
+	--main-shadow: 0 3px 8px 0 rgb(34 60 80 / 20%);
 }
 
 .wrapper {
@@ -67,23 +77,24 @@ body {
 	line-height: 24px;
 }
 
-.between-line {
-	height: 7px;
-	background: rgb(242,242,242);
-	border-radius: 8px;
-}
-
 .block-subtitle {
 	padding-left: 40px;
 	box-sizing: border-box;
-	font-size: 20px;
+	font-size: 22px;
 	line-height: 30px;
 	font-family: 'FontInterBold';
-	color: #333
+	color: #333;
+	padding-bottom: 10px
 }
 
 .subtitle-bold {
+	font-family: 'FontInterBold';
+	padding: 10px 0
+}
 
+.block-span {
+	font-size: 16px;
+	line-height: 26px;
 }
 
 /* Общие стили, конец */
@@ -560,9 +571,9 @@ body {
 	padding: 0 12px;
 	box-sizing: border-box;
 	border-radius: 10px;
-	-webkit-box-shadow: 0 3px 8px 0 rgba(34, 60, 80, .2);
-	-moz-box-shadow: 0 3px 8px 0 rgba(34, 60, 80, .2);
-	box-shadow: 0 3px 8px 0 rgba(34, 60, 80, .2);
+	-webkit-box-shadow: var(--main-shadow);
+	-moz-box-shadow: var(--main-shadow);
+	box-shadow: var(--main-shadow);
 	cursor: pointer;
 }
 
@@ -756,9 +767,9 @@ body {
 	padding: 30px 35px;
 	box-sizing: border-box;
 	border-radius: 10px;
-	-webkit-box-shadow: 0 3px 8px 0 rgb(34 60 80 / 20%);
-	-moz-box-shadow: 0 3px 8px 0 rgba(34, 60, 80, .2);
-	box-shadow: 0 3px 8px 0 rgb(34 60 80 / 20%);
+	-webkit-box-shadow: var(--main-shadow);
+	-moz-box-shadow: var(--main-shadow);
+	box-shadow: var(--main-shadow);
 }
 
 .subscribe-form-w {
@@ -976,8 +987,21 @@ body {
 /* Footer */
 
 .footer {
+	position: relative;
 	display: flex;
 	padding: 55px 0 20px 0;
+}
+
+.footer:before {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	content: '';
+	display: block;
+	height: 7px;
+	background: rgb(242,242,242);
+	border-radius: 8px;
 }
 
 .footer-title {
@@ -1109,6 +1133,7 @@ body {
 
 .map-slider-items {
 	display: flex;
+	justify-content: space-between;
 	list-style-type: none;
 	font-size: 0;
 	line-height: 0;
@@ -1194,10 +1219,427 @@ body {
 
 .map-info {
 	width: 400px;
+	padding-right: 10px;
+	box-sizing: border-box;
 }
 
 .map-block {
 	width: calc(100% - 400px);
 }
 
+.contact-info-block {
+	margin-bottom:20px;
+}
+
+.contacts-phone {
+    color: rgb(51,51,51);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.contacts-phone-info {
+	font-size: 12px;
+	font-family: 'FontInterLight';
+	font-style: italic;
+}
+
+.metro-block {
+	display: flex;
+}
+
+.metro-item {
+	display: inline-block;
+	padding-left: 25px;
+	box-sizing: border-box;
+	padding-right: 10px;
+	font-size: 16px;
+	line-height: 36px;
+}
+
 /* Блок карты, конец */
+
+
+/* Баннер по вакансиям */
+
+.vacancy-banner {
+	display: flex;
+	justify-content: space-between;
+    padding: 25px 30px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgb(255,75,43);
+	background: linear-gradient(45deg, rgba(255,75,43,1) 0%, rgba(255,75,43,1) 39%, rgba(255,65,108,1) 75%, rgba(255,65,108,1) 100%);
+	cursor: pointer;
+}
+
+.vacancy-title {
+	font-size: 30px;
+	line-height: 40px;
+	color: #fff;
+	font-family: 'FontInter';
+	padding-bottom: 10px
+}
+
+.vacancy-subtitle {
+	font-size: 20px;
+	line-height: 30px;
+	color: #fff
+}
+
+.vacancy-banner__p {
+	border-radius: 5px;
+	background-color: #fff;
+	color: #0575E6;
+	font-size: 20px;
+	line-height: 20px;
+	padding: 10px 15px;
+	box-sizing: border-box;
+	font-family: "FontInter";
+	text-align: center;
+	margin-bottom: -5px;
+}
+
+.vacancy-banner__btn {
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+}
+
+.vacancy-banner__info {
+	width: calc(100% - 550px);
+}
+
+.vacancy-banner__btn {
+	width: 540px;
+}
+
+/* Баннер по вакансиям, конец */
+
+
+/* Формы в контактах */
+
+.contacts-form {
+	display: flex;
+	justify-content: space-between;
+	padding: 50px 0 100px 0
+}
+
+/* Форма */
+
+.contacts-callback {
+	width: calc(50% - 10px);
+	padding: 30px 12px;
+	box-sizing: border-box;
+    -webkit-box-shadow: var(--main-shadow);
+    -moz-box-shadow: var(--main-shadow);
+    box-shadow: var(--main-shadow);
+	border-radius: 10px;
+}
+
+.contacts-callback__title {
+	padding-bottom: 20px;
+    font-family: 'FontInterBold';
+    color: rgb(51,51,51);
+    font-size: 22px;
+    line-height: 24px;
+}
+
+.contacts-form-w {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.contacts-form__input {
+	display: block;
+	width: calc(50% - 10px);
+	padding-left: 15px;
+	height: 60px;
+	box-sizing: border-box;
+	margin-bottom: 25px;
+	border-radius: 10px;
+	border: 2px solid #FF1F01!important;
+	outline: 0!important;
+}
+
+.contacts-form__textarea {
+	display: block;
+	width: 100%;
+	height: 110px;
+	border-radius: 10px;
+	box-sizing: border-box;
+	border: 2px solid #FF1F01!important;
+	outline: 0!important;
+	padding: 15px;
+	margin-bottom: 25px;
+}
+
+.contacts-form__input::-webkit-input-placeholder {color: rgb(122,122,122); font-size: 16px;line-height: 16px;}
+.contacts-form__input::-moz-placeholder          {color: rgb(122,122,122); font-size: 16px;line-height: 16px;}
+.contacts-form__input:-moz-placeholder           {color: rgb(122,122,122); font-size: 16px;line-height: 16px;}
+.contacts-form__input:-ms-input-placeholder      {color: rgb(122,122,122); font-size: 16px;line-height: 16px;}
+
+.contacts-form__textarea::-webkit-input-placeholder {color: rgb(122,122,122); font-size: 16px;line-height: 16px;}
+.contacts-form__textarea::-moz-placeholder          {color: rgb(122,122,122); font-size: 16px;line-height: 16px;}
+.contacts-form__textarea:-moz-placeholder           {color: rgb(122,122,122); font-size: 16px;line-height: 16px;}
+.contacts-form__textarea:-ms-input-placeholder      {color: rgb(122,122,122); font-size: 16px;line-height: 16px;}
+
+.contacts-btn-area {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.contacts-agree {
+	width: calc(100% - 170px);
+}
+
+
+.contacts-send-btn {
+	display: block;
+	width: 170px;
+	height: 50px;
+	background: rgb(255,75,43);
+	background: linear-gradient(45deg, rgba(255,75,43,1) 0%, rgba(255,75,43,1) 39%, rgba(255,65,108,1) 75%, rgba(255,65,108,1) 100%);
+	border-radius: 5px;
+	color: #fff;
+	font-family: 'FontInterBold';
+	border: 0!important;
+	outline: 0!important;
+	font-size: 18px;
+	line-height: 100%;
+	cursor: pointer;
+}
+
+/* Форма, конец */
+
+
+/* Подписка в контактах */
+
+.contacts-subscribe {
+	width: calc(50% - 10px);
+	padding: 30px 12px;
+	box-sizing: border-box;
+    -webkit-box-shadow: var(--main-shadow);
+    -moz-box-shadow: var(--main-shadow);
+    box-shadow: var(--main-shadow);
+	border-radius: 10px;
+}
+
+.contacts-subscribe-section {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 120px;
+	padding: 30px 35px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	-webkit-box-shadow: var(--main-shadow);
+	-moz-box-shadow: var(--main-shadow);
+	box-shadow: var(--main-shadow);
+}
+
+.contacts-subscribe-form-w {
+	width: calc(50% - 10px);
+}
+
+.contacts-subscribe-social {
+	width: calc(50% - 10px);
+}
+
+.contacts-subscribe-form {
+	width: 100%;
+	height: 60px;
+	position: relative;
+	background: rgb(49,140,216);
+	border-radius: 10px;
+}
+
+.contacts-subscribe-form-inside {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: calc(100% - 4px);
+	height: 56px;
+	padding: 4px 4px 4px 15px;
+	box-sizing: border-box;
+	background: #fff;
+	position: absolute;
+	top: 2px;
+	bottom: 2px;
+	left: 2px;
+	right: 2px;
+	margin: auto;
+	border-radius: 8px;
+}
+
+.get-contacts-subscribe {
+	display: block;
+	width: calc(100% - 200px);
+
+	border: 0!important;
+	outline: 0!important;
+	background: #fff;
+	color: rgb(103,103,103);
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.get-contacts-suscribe-btn {
+	width: 180px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.get-contacts-suscribe__submit {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 8px;
+	border: 0!important;
+	outline: 0!important;
+	font-size: 18px;
+	line-height: 20px;
+	color: #fff;
+	font-family: 'FontInterBold';
+	cursor: pointer;
+	background: rgb(2,196,144);
+}
+
+.get-contacts-subscribe::-webkit-input-placeholder {color: rgb(103,103,103);	font-size: 18px;line-height: 18px;}
+.get-contacts-subscribe::-moz-placeholder          {color: rgb(103,103,103);	font-size: 18px;line-height: 18px;}
+.get-contacts-subscribe:-moz-placeholder           {color: rgb(103,103,103);	font-size: 18px;line-height: 18px;}
+.get-contacts-subscribe:-ms-input-placeholder      {color: rgb(103,103,103);	font-size: 18px;line-height: 18px;}
+
+.contacts-subscribe-social-block {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+
+.contacts-s-w {
+	padding-bottom: 30px
+}
+
+.contacts-social-tg-rus {
+	display: block;
+	width: 100%;
+	height: 32px;
+	margin-bottom: 22px;
+	padding-left: 40px;
+	box-sizing: border-box;
+	font-size: 18px;
+	line-height: 30px;
+	color: rgb(67,151,237);
+	font-family: 'FontInter';
+	text-decoration: underline;
+	background-image: url('telegram.svg');
+	background-repeat: no-repeat;
+	background-size: 32px;
+	background-position: left center;
+}
+
+.contacts-social-tg-pdmsk {
+	display: block;
+	width: 100%;
+	height: 32px;
+	margin-bottom: 22px;
+	padding-left: 40px;
+	box-sizing: border-box;
+	font-size: 18px;
+	line-height: 30px;
+	color: rgb(67,151,237);
+	font-family: 'FontInter';
+	text-decoration: underline;
+	background-image: url('telegram.svg');
+	background-repeat: no-repeat;
+	background-size: 32px;
+	background-position: left center;
+}
+
+.contacts-social-vk {
+	display: block;
+	width: 100%;
+	height: 32px;
+	padding-left: 40px;
+	box-sizing: border-box;
+	font-size: 18px;
+	line-height: 30px;
+	color: rgb(67,151,237);
+	font-family: 'FontInter';
+	text-decoration: underline;
+	background-image: url('vk.svg');
+	background-repeat: no-repeat;
+	background-size: 32px;
+	background-position: left center;
+}
+
+.contacts-copyright {
+	font-size: 12px;
+	line-height: 24px;
+}
+
+/* Подписка в контактах, конец */
+
+/* Формы в контактах, конец */
+
+
+/* Результаты поиска */
+
+.search-result-title {
+	padding-left: 40px;
+	box-sizing: border-box;
+	font-size: 20px;
+	line-height: 30px;
+	font-family: 'FontInterBold';
+	color: #333;
+	padding-top: 50px;
+	padding-bottom: 15px;
+}
+
+/* Левый блок */
+
+.search-result-w {
+	display: flex;
+	justify-content: space-between;
+}
+
+.search-result-left {
+	max-height: 600px;
+	overflow: auto;
+}
+
+.search-result-left-w {
+	width: 400px;
+	background: #fff;
+	border-radius: 10px;
+}
+
+/* Левый блок, конец */
+
+/* Правый блок */
+
+.search-result-right {
+	width: 790px;
+}
+
+.search-item {
+	border-radius: 10px;
+	padding: 10px;
+	box-sizing: border-box;
+	box-shadow: var(--main-shadow);
+}
+
+.search-item-pic {
+	width: 200px;
+	height: 170px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 8px;
+}
+
+/* Правый блок, конец */
+
+/* Результаты поиска, конец */

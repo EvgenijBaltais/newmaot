@@ -78,15 +78,96 @@
 					<p class = "block-subtitle">Как к нам добраться</p>
 					<div class = "contact-info-block">
 						<p class = "subtitle-bold">Адрес</p>
-						<span>г. Москва, ул. Бауманская д.6с2. Бизнес-центр Виктория Плаза, 8 этаж, 804 офис</span>
+						<span class = "block-span">г. Москва, ул. Бауманская д.6с2. Бизнес-центр Виктория Плаза, 8 этаж, 804 офис</span>
+					</div>
+					<div class = "contact-info-block">
+						<p class = "subtitle-bold">Телефоны</p>
+						<div class = "contact-info__phone">
+							<a href="tel:+74956486711" class = "contacts-phone contacts-chast">+7 495 648 67 11</a>
+							<span class = "contacts-phone-info">Для частных лиц</span>
+						</div>
+						<div class = "contact-info__phone">
+							<a href="tel:+74956624928" class = "contacts-phone contacts-corp">+7 495 662 49 28</a>
+							<span class = "contacts-phone-info">Корпоративный отдел</span>
+						</div>
+					</div>
+					<div class = "contact-info-block">
+						<p class = "subtitle-bold">Мы работаем</p>
+						<span class = "block-span">по будням с 9:00 до 21:00,<br/>по выходным с 11:00 до 18:00</span>
+						<div class = "metro-block">
+							<div class = "metro-item">Бауманская</div>
+							<div class = "metro-item">Красносельская</div>
+						</div>
 					</div>
 				</div>
-				<div class = "map-block"></div>
+				<div class = "map-block">
+					<img src="y-map.jpg" alt="" class = "y-map">
+				</div>
 			</div>
 		</section>
 
+		<section class = "vacancy-banner">
+			<div class = "vacancy-banner__info">
+				<h2 class = "vacancy-title">Работа в сфере туризма!</h2>
+				<p class = "vacancy-subtitle">Мы ищем менеджера по продажам во внутреннем туризме.</p>
+			</div>
+			<div class = "vacancy-banner__btn">
+				<p class = "vacancy-banner__p">Никаких холодных звонков, клиенты звонят сами!</p>
+			</div>
+		</section>
 
-		<div class = "between-line"></div>
+		<section class = "contacts-form">
+
+			<div class = "contacts-callback">
+				<h2 class = "contacts-callback__title">Свяжитесь с нами</h2>
+
+				<form action="" name = "contacts-form">
+					<div class = "contacts-form-w">
+						<input type="text" name = "contacts-name" class = "contacts-form__input contacts-form__name" placeholder="Имя">
+						<input type="text" name = "contacts-company" class = "contacts-form__input contacts-form__company" placeholder="Название компании">
+						<input type="text" name = "contacts-email" class = "contacts-form__input contacts-form__email" placeholder="Email">
+						<input type="text" name = "contacts-phone" class = "contacts-form__input contacts-form__phone" placeholder="Телефон">
+
+						<textarea name="contacts-textarea" class = "contacts-form__textarea" placeholder="Сообщение"></textarea>
+						<div class = "contacts-btn-area">
+							<div class = "contacts-agree">
+								Я соглашаюсь с политикой конфиденциальности
+							</div>
+							<button class = "contacts-send-btn">Отправить</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class = "contacts-subscribe">
+
+				<h2 class = "contacts-callback__title">Подпишитесь на лучшие предложения</h2>
+
+				<div class = "contacts-s-w">
+					<form action="" name = "contacts-subscribe-form">
+						<div class = "contacts-subscribe-form">
+							<div class="contacts-subscribe-form-inside">
+								<input type="text" name = "get-contacts-subscribe" id = "get-contacts-subscribe" class = "get-contacts-subscribe" placeholder = "Укажите свою электронную почту">
+								<div class = "get-contacts-suscribe-btn">
+									<button class = "get-contacts-suscribe__submit">Подписаться</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<h2 class = "contacts-callback__title">Подпишитесь на наши соц. сети</h2>
+
+				<div class="contacts-s-w">
+					<a class = "contacts-social-tg-rus">Лучшие отели России</a>
+					<a class = "contacts-social-tg-pdmsk">Лучшие отели Подмосковья</a>
+					<a class = "contacts-social-vk">Все о качественном и доступном отдыхе в Подмосковье</a>
+				</div>
+
+				<span class = "contacts-copyright">&#169; 2004-2022. Магазин Отдыха - продажа горящих путевок</span>
+
+			</div>
+		</section>
+
 
 		<footer class = "footer">
 			<div class = "footer-col footer-col-1">

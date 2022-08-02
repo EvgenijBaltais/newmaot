@@ -201,8 +201,6 @@
 			<div class = "reviews-slider"></div>
 		</section>
 
-		<div class = "between-line"></div>
-
 		<footer class = "footer">
 			<div class = "footer-col footer-col-1">
 				<h3 class = "footer-col-title">Контакты с нами</h3>
