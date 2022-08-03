@@ -48,30 +48,136 @@
 		<section class = "search-result-w">
 
 			<div class = "search-result-left">
-				<div class = "search-result-left-w">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam consequatur architecto omnis porro ut iste at fuga, voluptate qui a ab tempore inventore ducimus laudantium, id unde dolorum ipsam beatae.
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam consequatur architecto omnis porro ut iste at fuga, voluptate qui a ab tempore inventore ducimus laudantium, id unde dolorum ipsam beatae.
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam consequatur architecto omnis porro ut iste at fuga, voluptate qui a ab tempore inventore ducimus laudantium, id unde dolorum ipsam beatae.
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam consequatur architecto omnis porro ut iste at fuga, voluptate qui a ab tempore inventore ducimus laudantium, id unde dolorum ipsam beatae.
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam consequatur architecto omnis porro ut iste at fuga, voluptate qui a ab tempore inventore ducimus laudantium, id unde dolorum ipsam beatae.
-				Lorem ipsum dolor sit amet, consectetur
-					 adipisicing elit. Totam consequatur architecto omnis porro ut
-					  iste at fuga, voluptate qui a ab tempore inventore ducimu
-					  s laudantium, id unde dolorum ipsam beatae.loremLorem ipsum dolor sit amet, consectetur adipisicing elit. Totam consequatur architecto omnis porro ut iste at fuga, voluptate qui a ab tempore inventore ducimus laudantium, id unde dolorum ipsam beatae.
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam consequatur architecto omnis porro ut iste at fuga, voluptate qui a ab tempore inventore ducimus laudantium, id unde dolorum ipsam beatae.
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam consequatur architecto omnis porro ut iste at fuga, voluptate qui a ab tempore inventore ducimus laudantium, id unde dolorum ipsam beatae.
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam consequatur architecto omnis porro ut iste at fuga, voluptate qui a ab tempore inventore ducimus laudantium, id unde dolorum ipsam beatae.
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam consequatur architecto omnis porro ut iste at fuga, voluptate qui a ab tempore inventore ducimus laudantium, id unde dolorum ipsam beatae.
-				Lorem ipsum dolor sit amet, consectetur
-					 adipisicing elit. Totam consequatur architecto omnis porro ut
-					  iste at fuga, voluptate qui a ab tempore inventore ducimu
-					  s laudantium, id unde dolorum ipsam beatae.lorem</div>
+				<div class = "search-result-left-w">
+
+
+					<div class = "aside-block direction-aside-form">
+							<h3 class = "aside-block-title">Направление</h3>
+						<div class = "aside-form-input-w">
+							<input type="text" class = "aside-form-input aside-form__name" placeholder="Подмосковье" value = "Подмосковье">
+						</div>
+						<div class = "aside-form-input-w aside-form-input-small">
+							<input type="text" class = "aside-form-input aside-form__in" placeholder="16 июля" value = "16 июля">
+						</div>
+						<div class = "aside-form-input-w aside-form-input-small">
+							<input type="text" class = "aside-form-input aside-form__out" placeholder="18 июля">
+						</div>
+						<div class = "aside-form-input-w">
+							<input type="text" class = "aside-form-input aside-form__guests" placeholder="3 гостя">
+						</div>
+						<button type = "button" class = "aside-form__btn">Найти</button>
+					</div>
+
+					<div class = "aside-block">
+						<h3 class = "aside-block-title">Тип питания</h3>
+						<a class="aside-close">Свернуть</a>
+						<? for ($i = 0; $i < 5; $i++): ?>
+						<div class = "aside-checkbox">
+							<input type="checkbox" id="checkbox-<?=$i;?>" class = "stylized"> <label for="checkbox-<?=$i;?>">Завтрак и обед</label>
+						</div>
+						<? endfor; ?>
+					</div>
+
+					<div class = "aside-block">
+						<h3 class = "aside-block-title">Дополнительные условия</h3>
+						<a class="aside-close">Свернуть</a>
+						<? for ($i = 0; $i < 10; $i++): ?>
+						<div class = "aside-checkbox">
+							<input type="checkbox" id="checkbox-<?=$i;?>" class = "stylized"> <label for="checkbox-<?=$i;?>">Завтрак и обед</label>
+						</div>
+						<? endfor; ?>
+					</div>
+
+				</div>
 			</div>
 
 			<div class = "search-result-right">
 
+				<? for ($i = 0; $i < 8; $i++):?>
 				<div class="search-item">
 					<div class = "search-item-pic" style = "background-image: url('../pic.jpg');"></div>
+					<div class = "search-item__content">
+						<a class = "search-item__title">Отель Солнечный Park Hotel</a>
+						<div class = "search-item__rate">
+							<ul class="search-rate__list">
+								<li class="search-rate__item search-rate__item-yellow"></li>
+								<li class="search-rate__item search-rate__item-yellow"></li>
+								<li class="search-rate__item search-rate__item-yellow"></li>
+								<li class="search-rate__item search-rate__item-yellow"></li>
+								<li class="search-rate__item search-rate__item-grey"></li>
+							</ul>
+							<span class = "search-rate__reviews">18 отзывов</span>
+							<span class = "search-rate__foodtype">Все включено</span>
+						</div>
+						<ul class = "search-item__list">
+							<li class = "search-item__item">Ресторан</li>
+							<li class = "search-item__item">SPA</li>
+							<li class = "search-item__item">Боулинг</li>
+							<li class = "search-item__item">Бильярд</li>
+							<li class = "search-item__item">Прокат</li>
+							<li class = "search-item__item">Бассейн</li>
+							<li class = "search-item__item">Бар</li>
+							<li class = "search-item__item">Тренажерный зал</li>
+							<li class = "search-item__item">WI-FI</li>
+							<li class = "search-item__item">Анимация</li>
+							<li class = "search-item__item">Конференц-зал</li>
+							<li class = "search-item__item">Детская площадка</li>
+							<li class = "search-item__item">Спортивная площадка</li>
+							<li class = "search-item__item">Сауна</li>
+							<li class = "search-item__item">Водоем</li>
+						</ul>
+					</div>
+					<div class = "search-item__broninfo">
+						<div class = "search-item__price">
+							<span class = "search-item__price-from">от</span>
+							<span class = "search-item__price-number">30 000</span>
+							<span class = "search-item__price-currency">&#8381;</span>
+						</div>
+						<p class = "search-item__nights">цена за <span class = "search-item__nights-number">1</span> ночь</p>
+						<button class = "search-item__bron">Выбрать</button>
+					</div>
 				</div>
+				<? endfor; ?>
+
+				<div class="search-item">
+					<div class = "search-item-pic" style = "background-image: url('../pic.jpg');"></div>
+					<div class = "search-item__content">
+						<a class = "search-item__title">Отель Фореста Парк с очень длинным названием</a>
+						<div class = "search-item__rate">
+							<ul class="search-rate__list">
+								<li class="search-rate__item search-rate__item-yellow"></li>
+								<li class="search-rate__item search-rate__item-yellow"></li>
+								<li class="search-rate__item search-rate__item-yellow"></li>
+								<li class="search-rate__item search-rate__item-yellow"></li>
+								<li class="search-rate__item search-rate__item-grey"></li>
+							</ul>
+							<span class = "search-rate__reviews">18 отзывов</span>
+							<span class = "search-rate__foodtype">Все включено</span>
+						</div>
+						<ul class = "search-item__list">
+							<li class = "search-item__item">Ресторан</li>
+							<li class = "search-item__item">SPA</li>
+							<li class = "search-item__item">Боулинг</li>
+							<li class = "search-item__item">Бильярд</li>
+							<li class = "search-item__item">Прокат</li>
+							<li class = "search-item__item">Бассейн</li>
+							<li class = "search-item__item">Бар</li>
+						</ul>
+						<div class = "search-item__adress">
+							В 30 км. от МКАД по Симферопольскому шоссе, поворот налево, потом направо, потом налево
+						</div>
+					</div>
+					<div class = "search-item__broninfo">
+						<div class = "search-item__price">
+							<span class = "search-item__price-from">от</span>
+							<span class = "search-item__price-number">30 000</span>
+							<span class = "search-item__price-currency">&#8381;</span>
+						</div>
+						<p class = "search-item__nights">цена за <span class = "search-item__nights-number">1</span> ночь</p>
+						<button class = "search-item__bron">Выбрать</button>
+					</div>
+				</div>
+
 			</div>
 
 		</section>
