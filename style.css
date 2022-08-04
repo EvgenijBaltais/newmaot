@@ -50,6 +50,7 @@
 	padding: 0;
 	font-family: 'FontInter';
 	box-sizing: border-box;
+	color: #333
 }
 
 body {
@@ -83,7 +84,6 @@ body {
 	font-size: 22px;
 	line-height: 30px;
 	font-family: 'FontInterBold';
-	color: #333;
 	padding-bottom: 10px
 }
 
@@ -342,7 +342,6 @@ input[type="checkbox"].stylized:checked + label:after {
 	}
 
 	.moblie-social-info {
-		color: #333;
 		font-size: 16px;
 		line-height: 24px;
 		font-family: 'FontInterSemiBold';
@@ -1636,7 +1635,6 @@ input[type="checkbox"].stylized:checked + label:after {
 	font-size: 20px;
 	line-height: 30px;
 	font-family: 'FontInterBold';
-	color: #333;
 	padding-top: 50px;
 	padding-bottom: 15px;
 }
@@ -1875,21 +1873,18 @@ input[type="checkbox"].stylized:checked + label:after {
 .search-item__price-from {
 	font-size: 18px;
 	line-height: 26px;
-	color: #333
 }
 
 .search-item__price-number {
 	font-size: 26px;
 	line-height: 26px;
 	font-family: 'FontInterBold';
-	color: #333
 }
 
 .search-item__price-currency {
 	font-size: 26px;
 	line-height: 26px;
 	font-family: 'FontInterBold';
-	color: #333
 }
 
 .search-item__nights {
@@ -2188,6 +2183,10 @@ input[type="checkbox"].stylized:checked + label:after {
 	transition: .2s color;
 }
 
+.select-dates-link.active {
+	color: #FF4B2A;
+}
+
 .select-dates-link:after {
 	position: absolute;
 	left: 0;
@@ -2207,6 +2206,10 @@ input[type="checkbox"].stylized:checked + label:after {
 .select-dates-link:hover:after {
 	border-color: #FF4B2A;
 	transition: .2s border-color;
+}
+
+.select-dates-link.active:after {
+	border-color: #FF4B2A;
 }
 
 .select-form-items {
@@ -2296,6 +2299,95 @@ input[type="checkbox"].stylized:checked + label:after {
 .select-results {
 	padding-top: 30px;
 }
+
+.hotel-title-section {
+	padding: 10px 0 0 0;
+	margin-bottom: -20px;
+}
+
+.hotel-title-section p {
+	margin-bottom: 25px;
+}
+
+/* Подраздел Номера */
+
+.result-rooms__item {
+    border-radius: 10px;
+    padding: 10px 0 10px 10px;
+    box-shadow: var(--main-shadow);
+    margin-bottom: 20px;
+}
+
+.result-rooms__item::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+
+.result-rooms__item-pic {
+	position: relative;
+	float: left;
+	margin-right: 20px;
+	width: 285px;
+	height: 205px;
+	border-radius: 10px;
+	background-color: #ccc;
+}
+
+.result-rooms__title {
+	display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'FontInterSemiBold';
+    color: rgb(5, 117, 229);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.result-rooms__item p {
+    font-size: 16px;
+	line-height: 24px;
+}
+
+.result-rooms-details {
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+	display: inline-block;
+	padding: 5px 10px;
+	background-color: #fff;
+	border-radius: 6px;
+	text-align: center;
+}
+
+.result-rooms-details__dop {
+	padding-bottom: 3px;
+    font-size: 12px;
+    line-height: 12px;
+	font-family: 'FontInterLight';
+}
+
+.result-rooms-details .result-rooms-details__nights {
+	font-size: 12px;
+    line-height: 12px;
+	font-family: 'FontInterLight';
+}
+
+.result-rooms-details__num {
+	color: #DB5A3D;
+	font-size: 30px;
+	line-height: 30px;
+	font-family: 'FontInterBold';
+}
+
+.result-rooms-details span {
+    font-size: 16px;
+	line-height: 20px;
+}
+
+/* Подраздел Номера, конец */
 
 /* Карточка номера из подобранных в поиске */
 
@@ -2416,7 +2508,6 @@ input[type="checkbox"].stylized:checked + label:after {
 
 .select-results-from-info {
 	padding-bottom: 15px;
-	color: #333;
 }
 
 .select-results-from-info span {
@@ -2428,7 +2519,6 @@ input[type="checkbox"].stylized:checked + label:after {
 	padding-top: 20px;
 	font-size: 16px;
 	line-height: 24px;
-	color: #333
 }
 
 .select-results-bron {
