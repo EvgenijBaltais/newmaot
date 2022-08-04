@@ -123,6 +123,7 @@
 				</form>
 
 				<div class = "select-results">
+					<? for ($i = 0; $i < 3; $i++):?>
 					<div class="select-results__item">
 						<div class="select-results__item-pic" style = ""></div>
 						<div class="select-results__item-content">
@@ -164,13 +165,36 @@
 								<span class = "select-results-nights">1</span>
 								<span>ночь</span>
 							</div>
+							<button class = "select-results-bron">Забронировать</button>
+						</div>
+						<div class="select-results__item-text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor accusantium maiores molestiae, 
+							itaque atque ratione ipsam quam rem totam magni esse nesciunt, a nostrum harum unde, facere eum deserunt?
 						</div>
 					</div>
+					<? endfor;?>
 				</div>
 			</div>
 
 			<div class = "select-dates-nav">
-
+				<div class = "select-dates-item">
+					<a href="" class = "select-dates-link">Поиск номеров</a>
+				</div>
+				<div class = "select-dates-item">
+					<a href="" class = "select-dates-link">Описание отеля</a>
+				</div>
+				<div class = "select-dates-item">
+					<a href="" class = "select-dates-link">Номера</a>
+				</div>
+				<div class = "select-dates-item">
+					<a href="" class = "select-dates-link">Инфраструктура</a>
+				</div>
+				<div class = "select-dates-item">
+					<a href="" class = "select-dates-link">Развлечения</a>
+				</div>
+				<div class = "select-dates-item">
+					<a href="" class = "select-dates-link">Контакты</a>
+				</div>
 			</div>
 		</section>
 

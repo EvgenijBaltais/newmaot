@@ -1049,6 +1049,7 @@ input[type="checkbox"].stylized:checked + label:after {
 	position: relative;
 	display: flex;
 	padding: 55px 0 20px 0;
+	margin-top: 75px;
 }
 
 .footer:before {
@@ -2147,10 +2148,6 @@ input[type="checkbox"].stylized:checked + label:after {
 	width: 820px;
 }
 
-.select-dates-nav {
-	width: calc(100% - 840px);
-}
-
 .select-dates-form {
 	width: 820px;
 	display: flex;
@@ -2159,6 +2156,57 @@ input[type="checkbox"].stylized:checked + label:after {
 
 .select-dates-nav {
 	width: calc(100% - 840px);
+	margin-top: 45px
+}
+
+.select-dates-item {
+	padding: 13px 0;
+}
+
+.select-dates-item:first-child {
+	padding-top: 0;
+}
+
+.select-dates-item:last-child {
+	padding-bottom: 0;
+}
+
+.select-dates-link {
+	position: relative;
+	display: block;
+	padding-left: 30px;
+	font-size: 24px;
+	line-height: 30px;
+	color: #0575E5;
+	transition: .2s color;
+	text-decoration: underline;
+	font-family: 'FontInterLight';
+}
+
+.select-dates-link:hover {
+	color: #FF4B2A;
+	transition: .2s color;
+}
+
+.select-dates-link:after {
+	position: absolute;
+	left: 0;
+	top: 10px;
+	content: '';
+	display: block;
+    border: solid #0575E5;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+	font-family: 'FontInterLight';
+	transition: .2s border-color;
+}
+
+.select-dates-link:hover:after {
+	border-color: #FF4B2A;
+	transition: .2s border-color;
 }
 
 .select-form-items {
@@ -2253,10 +2301,15 @@ input[type="checkbox"].stylized:checked + label:after {
 
 .select-results__item {
     display: flex;
+	flex-wrap: wrap;
     border-radius: 10px;
     padding: 10px 0 10px 10px;
     box-shadow: var(--main-shadow);
     margin-bottom: 20px;
+}
+
+.select-results__item:last-child {
+	margin-bottom: 0
 }
 
 .select-results__item-pic {
@@ -2344,6 +2397,7 @@ input[type="checkbox"].stylized:checked + label:after {
 .select-results__item-price {
 	text-align: center;
 	width: 170px;
+	padding-top: 5px;
 }
 
 .select-results-from .select-from-currency {
@@ -2360,9 +2414,38 @@ input[type="checkbox"].stylized:checked + label:after {
 	color: #FE4B2B;
 }
 
+.select-results-from-info {
+	padding-bottom: 15px;
+	color: #333;
+}
+
 .select-results-from-info span {
 	font-size: 14px;
     line-height: 14px;
+}
+
+.select-results__item-text {
+	padding-top: 20px;
+	font-size: 16px;
+	line-height: 24px;
+	color: #333
+}
+
+.select-results-bron {
+	width: 140px;
+	height: 38px;
+	margin: 0 auto;
+	display: block;
+	background-color: #00EC64;
+	color: #fff;
+	text-align: center;
+	border-radius: 8px;
+	font-family: 'FontInterBold';
+    border: 0!important;
+    outline: 0!important;
+    font-size: 14px;
+    line-height: 100%;
+    cursor: pointer;
 }
 
 /* Карточка номера из подобранных в поиске, конец */
