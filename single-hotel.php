@@ -87,28 +87,91 @@
 			</div>
 		</section>
 
-		<section class = "bron-dates-form">
-			<h2 class = "hotel-title-h2">Номера на 
-				<span class = "bron-dates-in">16</span>
-				-
-				<span class = "bron-dates-in">18</span>
-				<span class = "bron-dates-month">июля</span>
-				для
-				<span class = "bron-dates-adults">2</span>
-				взрослых и 
-				<span class = "bron-dates-children">ребенка</span>
-			</h2>
+		<section class = "select-dates-content">
+			<div class = "select-dates-form-block">
+				<h2 class = "hotel-title-h2">Номера на 
+					<span class = "select-dates-in">16</span>
+					-
+					<span class = "select-dates-in">18</span>
+					<span class = "select-dates-month">июля</span>
+					для
+					<span class = "select-dates-adults">2</span>
+					взрослых и 
+					<span class = "select-dates-children">ребенка</span>
+				</h2>
 
-			<form action="">
-				<div class = "bron-dates-form">
-					<div class = "bron-dates-form__form">
-						<div class = "bron-form-items">
-							
+				<form action="">
+					<div class = "select-dates-form">
+						<div class = "select-dates-form__form">
+							<div class = "select-form-items">
+								<div class = "select-form-input-w">
+									<input type="text" name = "select-form-name" class = "select-form-input select-form-name" placeholder="Курорт-парк Союз(МИД)" value = "Курорт-парк Союз(МИД)">
+								</div>
+								<div class = "select-form-input-w">
+									<input type="text" name = "select-form-in" class = "select-form-input select-form-in" placeholder="16 июля" value = "16 июля">
+								</div>
+								<div class = "select-form-input-w">
+									<input type="text" name = "select-form-out" class = "select-form-input select-form-out" placeholder="18 июля" value = "18 июля">
+								</div>
+								<div class = "select-form-input-w">
+									<input type="text" name = "select-form-guests" class = "select-form-input select-form-guests" placeholder="3 гостя" value = "3 гостя">
+								</div>
+							</div>
+						</div>
+						<button type = "button" class = "select-dates-form__btn">Найти</button>
+					</div>
+				</form>
+
+				<div class = "select-results">
+					<div class="select-results__item">
+						<div class="select-results__item-pic" style = ""></div>
+						<div class="select-results__item-content">
+							<a href=""class="select-item-title">4 местный 23-24 коттедж</a>
+							<div class = "select-item-info">
+								<div class = "select-item__block select-item__in">
+									<span class = "select-item__text">Заезд:</span>
+									<span class = "select-item__value select-item__in">16.07.2022</span>
+								</div>
+								<div class = "select-item__block select-item__adults">
+									<span class = "select-item__text">Взрослых:</span>
+									<span class = "select-item__value select-item__adults">2</span>
+								</div>
+								<div class = "select-item__block select-item__out">
+									<span class = "select-item__text">Выезд:</span>
+									<span class = "select-item__value select-item__out">18.07.2022</span>
+								</div>
+								<div class = "select-item__block select-item__children">
+									<span class = "select-item__text">Детей:</span>
+									<span class = "select-item__value select-item__children">1</span>
+								</div>
+							</div>
+						</div>
+						<div class="select-results__item-price">
+							<div class="select-results-price-info">
+								<span class = "select-results-price">90 000</span>&nbsp;
+								<span class = "select-results-currency">&#8381;</span>&nbsp;
+								<span>за</span>&nbsp;
+								<span class = "select-results-nights">3</span>&nbsp;
+								<span>ночи</span>
+							</div>
+							<div class = "select-results-from">
+								<span>от</span>
+								<span class = "select-from-value">30 000</span>
+								<span class = "select-from-currency">&#8381;</span>
+							</div>
+							<div class = "select-results-from-info">
+								<span>цена за</span>
+								<span class = "select-results-nights">1</span>
+								<span>ночь</span>
+							</div>
 						</div>
 					</div>
-					<button type = "button" class = "bron-dates-form__btn">Найти</button>
 				</div>
-			</form>
+			</div>
+
+			<div class = "select-dates-nav">
+
+			</div>
 		</section>
 
 		<footer class = "footer">
