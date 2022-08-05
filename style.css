@@ -489,7 +489,8 @@ input[type="checkbox"].stylized:checked + label:after {
 	padding: 50px 0;
 	display: inline-block;
 	font-family: FontInterBold;
-	font-size: 60px;
+	font-size: 52px;
+	line-height: 60px;
 	color:#333;
 	text-align: center;
 }
