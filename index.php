@@ -161,6 +161,10 @@
 							</div>
 						</div>
 					</div>
+					<div class = "subscribe-agree">
+						<input type="checkbox" id="subscribe-checkbox-<?=$i;?>" class = "stylized"> <label for="subscribe-checkbox-<?=$i;?>">
+						Хочу получать акции и спецпредложения для своих путешествий</label>
+					</div>
 				</form>
 			</div>
 			<div class = "subscribe-social">

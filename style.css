@@ -97,12 +97,22 @@ body {
 	line-height: 26px;
 }
 
+.bold-span {
+	font-family: 'FontInterBold';
+}
+
 .aside-block-title {
 	color: rgb(50,50,50);
 	font-size: 20px;
 	line-height: 26px;
 	padding-bottom: 15px;
 	padding-right: 90px;
+}
+
+.info-text {
+	font-size: 15px;
+	line-height: 24px;
+	padding-bottom: 5px;
 }
 
 /* Стилизация чекбокса */
@@ -164,8 +174,75 @@ input[type="checkbox"].stylized:checked + label:after {
     opacity: 1;
 }
 
-
 /* Стилизация чекбокса, конец */
+
+
+/* Стилизация чекбокса в форме подписки */
+
+.subscribe-agree {
+	padding: 15px 0 0 0
+}
+
+input[type="checkbox"].stylized:checked, 
+input[type="checkbox"].stylized:not(:checked)
+{
+    position: absolute;
+    left: -9999px;
+}
+
+input[type="checkbox"].stylized:checked + label, 
+input[type="checkbox"].stylized:not(:checked) + label {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+	font-size: 12px;
+    line-height: 20px;
+    cursor: pointer;
+	user-select: none;
+	color: rgb(51,51,51)
+}
+
+input[type="checkbox"].stylized:checked + label:before, 
+input[type="checkbox"].stylized:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #057DDE;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+input[type="checkbox"]:checked + label:after, 
+input[type="checkbox"]:not(:checked) + label:after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    width: 8px;
+    height: 5px;
+    border-radius: 1px;
+    border-left: 3px solid #057DDE;
+    border-bottom: 3px solid #057DDE;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+input[type="checkbox"].stylized:not(:checked) + label:after {
+    opacity: 0;
+}
+
+input[type="checkbox"].stylized:checked + label:after {
+    opacity: 1;
+}
+
+/* Стилизация чекбокса в форме подписки, конец */
+
 
 /* Общие стили, конец */
 
@@ -409,10 +486,10 @@ input[type="checkbox"].stylized:checked + label:after {
 
 .secondary-h1 {
 	width: 100%;
-	padding: 100px 0;
+	padding: 50px 0;
 	display: inline-block;
-	font-family: FontInterExtraBold;
-	font-size: 70px;
+	font-family: FontInterBold;
+	font-size: 60px;
 	color:#333;
 	text-align: center;
 }
@@ -753,6 +830,10 @@ input[type="checkbox"].stylized:checked + label:after {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 10px;
+}
+
+.popular-item:last-child {
+	margin-bottom: 0
 }
 
 .popular-item:after {
@@ -2541,3 +2622,340 @@ input[type="checkbox"].stylized:checked + label:after {
 /* Карточка номера из подобранных в поиске, конец */
 
 /* Одиночный отель, конец */
+
+
+/* Страница оплаты */
+
+.pay-content {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 100px
+}
+
+.pay-left {
+	width: 400px;
+}
+
+.pay-right {
+	width: 800px;
+}
+
+.single-block-title {
+	color: rgb(51, 51, 51);
+	font-family: 'FontInterBold';
+    font-size: 22px;
+    line-height: 30px;
+    text-decoration: none;
+    margin-right: 30px;
+	margin-bottom: 25px;
+}
+
+.left-block-bedroom {
+	background-image: url('left-nav.svg');
+	background-size: 25px;
+	background-position: left center;
+	background-repeat: no-repeat;
+	padding-left: 38px;
+}
+
+/* Блок навигации */
+
+.left-nav-block {
+	padding: 15px;
+    -webkit-box-shadow: var(--main-shadow);
+    -moz-box-shadow: var(--main-shadow);
+    box-shadow: var(--main-shadow);
+	border-radius: 10px;
+	margin-bottom: 40px
+}
+
+.left-nav-list {
+	list-style-type: none;
+}
+
+.left-nav-item {
+	padding-bottom:5px
+}
+
+.left-nav-item:last-child {
+	padding-bottom:0
+}
+
+.left-nav-link {
+	font-size: 15px;
+	line-height: 30px;
+	text-decoration: underline;
+}
+
+.left-nav-list__sub {
+	list-style-type: disc;
+	padding-left: 25px
+}
+
+/* Блок навигации, конец */
+
+
+/* Блок Супер цены */
+
+.super-prices-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-bottom: 10px
+}
+
+.super-prices-item:last-child {
+	padding-bottom: 0
+}
+
+.super-prices-item__link {
+	color: #2486E9;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.super-prices-item__dotted {
+	height: 20px;
+	content: '';
+	display: block;
+	flex: 1 1;
+	background-image: url('');
+}
+
+.super-prices-item__number {
+	color: #828282;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.super-prices-item__number span {
+	color: #828282;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+/* Блок Супер цены, конец */
+
+/* Оплата - контент страницы */
+
+.pay-page-content {
+
+}
+
+.law-info {
+	padding-top: 50px
+}
+
+.pay-page-content__text {
+	font-size: 15px;
+	line-height: 24px;
+	margin-bottom: 30px
+}
+
+.pay-page-content__text-bold {
+	font-family: 'FontInterBold';
+}
+
+.pay-icons {
+	display: flex;
+	justify-content: space-between;
+	padding: 50px 0;
+}
+
+.pay-card-list {
+	list-style-type: disc;
+	padding-left: 20px;
+	margin-bottom: 30px
+}
+
+.pay-card-item {
+	color: #0574E7;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+/* Оплата - контент страницы, конец */
+
+
+/* Популярные отели России (блок посередине страницы) */
+
+.between-populars-items {
+	width: 620px;
+	margin: 80px auto;
+}
+
+/* Популярные отели России (блок посередине страницы), конец */
+
+
+/* Форма подписки среди контента на странице */
+
+.content-subscribe {
+	max-width: 620px;
+	padding: 25px 18px;
+	margin: 80px auto;
+    -webkit-box-shadow: var(--main-shadow);
+    -moz-box-shadow: var(--main-shadow);
+    box-shadow: var(--main-shadow);
+	border-radius: 10px;
+}
+
+.content-subscribe-section {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 120px;
+	padding: 30px 35px;
+	border-radius: 10px;
+	-webkit-box-shadow: var(--main-shadow);
+	-moz-box-shadow: var(--main-shadow);
+	box-shadow: var(--main-shadow);
+}
+
+.content-subscribe-form-w {
+	width: calc(50% - 10px);
+}
+
+.content-subscribe-social {
+	width: calc(50% - 10px);
+}
+
+.content-subscribe-form {
+	width: 100%;
+	height: 60px;
+	position: relative;
+	background: rgb(49,140,216);
+	border-radius: 10px;
+}
+
+.content-subscribe-form-inside {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: calc(100% - 4px);
+	height: 56px;
+	padding: 4px 4px 4px 15px;
+	background: #fff;
+	position: absolute;
+	top: 2px;
+	bottom: 2px;
+	left: 2px;
+	right: 2px;
+	margin: auto;
+	border-radius: 8px;
+}
+
+.get-content-subscribe {
+	display: block;
+	width: calc(100% - 200px);
+
+	border: 0!important;
+	outline: 0!important;
+	background: #fff;
+	color: rgb(103,103,103);
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.get-content-suscribe-btn {
+	width: 180px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.get-content-suscribe__submit {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 8px;
+	border: 0!important;
+	outline: 0!important;
+	font-size: 18px;
+	line-height: 20px;
+	color: #fff;
+	font-family: 'FontInterBold';
+	cursor: pointer;
+	background: rgb(2,196,144);
+}
+
+.get-content-subscribe::-webkit-input-placeholder {color: rgb(103,103,103);	font-size: 18px;line-height: 18px;}
+.get-content-subscribe::-moz-placeholder          {color: rgb(103,103,103);	font-size: 18px;line-height: 18px;}
+.get-content-subscribe:-moz-placeholder           {color: rgb(103,103,103);	font-size: 18px;line-height: 18px;}
+.get-content-subscribe:-ms-input-placeholder      {color: rgb(103,103,103);	font-size: 18px;line-height: 18px;}
+
+.content-subscribe-social-block {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+
+.content-s-w {
+	padding-bottom: 30px
+}
+
+.content-subscribe-socials {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.content-social-tg-rus {
+	display: block;
+	width: 45%;
+	height: 32px;
+	margin-bottom: 22px;
+	padding-left: 40px;
+	font-size: 18px;
+	line-height: 30px;
+	color: rgb(67,151,237);
+	font-family: 'FontInter';
+	text-decoration: underline;
+	background-image: url('telegram.svg');
+	background-repeat: no-repeat;
+	background-size: 32px;
+	background-position: left center;
+}
+
+.content-social-tg-pdmsk {
+	display: block;
+	width: 55%;
+	height: 32px;
+	margin-bottom: 22px;
+	padding-left: 40px;
+	font-size: 18px;
+	line-height: 30px;
+	color: rgb(67,151,237);
+	font-family: 'FontInter';
+	text-decoration: underline;
+	background-image: url('telegram.svg');
+	background-repeat: no-repeat;
+	background-size: 32px;
+	background-position: left center;
+}
+
+.content-social-vk {
+	display: block;
+	width: 100%;
+	height: 32px;
+	padding-left: 40px;
+	font-size: 18px;
+	line-height: 30px;
+	color: rgb(67,151,237);
+	font-family: 'FontInter';
+	text-decoration: underline;
+	background-image: url('vk.svg');
+	background-repeat: no-repeat;
+	background-size: 32px;
+	background-position: left center;
+}
+
+.content-copyright {
+	font-size: 12px;
+	line-height: 24px;
+}
+
+/* Форма подписки среди контента на странице, конец */
+
+
+/* Страница оплаты, конец */

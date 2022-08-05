@@ -139,9 +139,7 @@
 				</form>
 			</div>
 			<div class = "contacts-subscribe">
-
 				<h2 class = "contacts-callback__title">Подпишитесь на лучшие предложения</h2>
-
 				<div class = "contacts-s-w">
 					<form action="" name = "contacts-subscribe-form">
 						<div class = "contacts-subscribe-form">
@@ -152,23 +150,21 @@
 								</div>
 							</div>
 						</div>
+						<div class = "subscribe-agree">
+							<input type="checkbox" id="subscribe-checkbox-<?=$i;?>" class = "stylized"> <label for="subscribe-checkbox-<?=$i;?>">
+							Хочу получать акции и спецпредложения для своих путешествий</label>
+						</div>
 					</form>
 				</div>
-
 				<h2 class = "contacts-callback__title">Подпишитесь на наши соц. сети</h2>
-
 				<div class="contacts-s-w">
 					<a class = "contacts-social-tg-rus">Лучшие отели России</a>
 					<a class = "contacts-social-tg-pdmsk">Лучшие отели Подмосковья</a>
 					<a class = "contacts-social-vk">Все о качественном и доступном отдыхе в Подмосковье</a>
 				</div>
-
 				<span class = "contacts-copyright">&#169; 2004-2022. Магазин Отдыха - продажа горящих путевок</span>
-
 			</div>
 		</section>
-
-
 		<footer class = "footer">
 			<div class = "footer-col footer-col-1">
 				<h3 class = "footer-col-title">Контакты с нами</h3>
